@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Paradise - Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="booking">
+        <h2>Book Your Dream Destination</h2>
+        <p>Fill in the details below to secure your spot!</p>
+        
+        <form id="bookingForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="destination">Select Destination:</label>
+            <select id="destination" name="destination" required>
+                <option value="">-- Choose a destination --</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Paris">Paris</option>
+                <option value="Bali">Bali</option>
+                <option value="New York">New York</option>
+                <option value="Rome">Rome</option>
+                <option value="Tokyo">Tokyo</option>
+            </select>
+
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+
+        <div id="confirmationMessage" class="hidden">
+            <h3>Thank you for booking with us!</h3>
+            <p>We will get in touch with you shortly.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

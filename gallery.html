@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Paradise - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="gallery">
+        <h2>Travel Gallery</h2>
+        <div class="gallery-container">
+            <img src="https://media.istockphoto.com/id/2153741067/photo/boardwalk-into-tropical-paradise-island.webp?a=1&b=1&s=612x612&w=0&k=20&c=8xqrSdJmY1kEimRbPap_l6z9b_OrISfPV7aKf0d6gHI=" alt="Maldives" onclick="openLightbox(this)">
+            <img src="https://media.istockphoto.com/id/1952253409/photo/skyline-paris.webp?a=1&b=1&s=612x612&w=0&k=20&c=WZSOzOtfQ55hyf-uUku8Jadxgz4TQNMJZpLR1J44WzU=" alt="Paris" onclick="openLightbox(this)">
+            <img src="https://media.istockphoto.com/id/516679666/photo/ulun-danu-bratan-temple-in-bali-indonesia.webp?a=1&b=1&s=612x612&w=0&k=20&c=xV4jf1lo6-lXJsjYNoOWYfdE60qXId5-t5BDv3bcXcI=" alt="Bali" onclick="openLightbox(this)">
+            <img src="https://media.istockphoto.com/id/538811669/photo/manhattan-panorama-with-its-skyscrapers-illuminated-at-dusk-new-york.webp?a=1&b=1&s=612x612&w=0&k=20&c=4Rj4Mx2RjMYeOHuNAs7ZWupwdao25kf81tpZ1Kr6TqM=" alt="New York" onclick="openLightbox(this)">
+            <img src="https://media.istockphoto.com/id/1148857816/photo/coliseum-in-rome.webp?a=1&b=1&s=612x612&w=0&k=20&c=zFg7H70K7vH-FOaM-gEq1L_6km3xNH0GgiaoZgZ7Srw=" alt="Rome" onclick="openLightbox(this)">
+            <img src="https://media.istockphoto.com/id/1479771597/photo/tokyo-japan-skyline-with-the-tokyo-tower.webp?a=1&b=1&s=612x612&w=0&k=20&c=NCKSqB9Hg6R2W1lJ30HLFtEJX83mMFqJcnfiQsCBG6M=" alt="Tokyo" onclick="openLightbox(this)">
+        </div>
+    </section>
+
+    <!-- Lightbox for enlarged images -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
